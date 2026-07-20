@@ -1,5 +1,6 @@
 package com.rev;
 
+import com.rev.api.ExceptionHandlers;
 import com.rev.api.MovieAPI;
 import com.rev.repository.jooq.JooqConfig;
 import com.rev.repository.jooq.JooqMovieRepository;
@@ -20,5 +21,7 @@ public class Main {
             put("/:id",     movieAPI::editMovie, new JsonTransformer());
             delete("/:id",  movieAPI::deleteMovie);
         });
+
+        ExceptionHandlers.register();
     }
 }
