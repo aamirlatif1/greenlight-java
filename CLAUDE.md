@@ -34,3 +34,7 @@ No jOOQ codegen plugin is configured yet; add one under `<build><plugins>` (it n
 ## Environment note
 
 This directory is **not a git repository** — initialize one before expecting version-control workflows to work.
+
+## conventions
+- follow hexagonal architecture
+- follow DDD practices
